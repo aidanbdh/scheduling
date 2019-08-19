@@ -1,0 +1,164 @@
+{
+    "baseShifts": {
+        "hours": 56,
+        "Sunday": [
+            "5am-1pm"
+        ],
+        "Monday": [
+            "6:00am-2:00pm"
+        ],
+        "Tuesday": [
+            "7 am - 3 pm"
+        ],
+        "Wednesday": [
+            "8-16"
+        ],
+        "Thursday": [
+            "900-1700"
+        ],
+        "Friday": [
+            {
+                "start": "10am",
+                "end": "6pm"
+            }
+        ],
+        "Saturday": [
+            {
+                "start": 11,
+                "end": 19,
+                "people": 1
+            }
+        ]
+    },
+    "baseEmployees": [
+        {
+            "name": "Aidan",
+            "hours": 16,
+            "availability": {
+                "Monday": [
+                    "6am-10am"
+                ],
+                "Tuesday": [
+                    "11am-3pm"
+                ],
+                "Wednesday": [
+                    "8-16"
+                ]
+            }
+        },
+        {
+            "name": "Tanner",
+            "hours": 16,
+            "availability": {
+                "Friday": [
+                    "10am-6pm"
+                ],
+                "Saturday": [
+                    "11am-7pm"
+                ]
+            }
+        },
+        {
+            "name": "Torry",
+            "hours": 16,
+            "availability": {
+                "Monday": [
+                    {
+                        "start": "10am",
+                        "end": "2pm"
+                    }
+                ],
+                "Tuesday": [
+                    {
+                        "start": "7am",
+                        "end": "11"
+                    }
+                ],
+                "Thursday": [
+                    "900-1700"
+                ]
+            }
+        }
+    ],
+    "insufficientHoursShifts": {
+        "hours": 48,
+        "Sunday": [
+            "5am-1pm"
+        ],
+        "Monday": [
+            "6:00am-2:00pm"
+        ],
+        "Tuesday": [
+            "7 am - 3 pm"
+        ],
+        "Wednesday": [
+            "8-16"
+        ],
+        "Thursday": [
+            "900-1700"
+        ],
+        "Friday": [
+            {
+                "start": "10am",
+                "end": "6pm"
+            }
+        ],
+        "Saturday": [
+            {
+                "start": 11,
+                "end": 19,
+                "people": 1
+            }
+        ]
+    },
+    "insufficientEmployeeHours": [
+        {
+            "name": "Aidan",
+            "hours": 16,
+            "availability": {
+                "Monday": [
+                    "6am-10am"
+                ],
+                "Tuesday": [
+                    "11am-3pm"
+                ],
+                "Wednesday": [
+                    "8-16"
+                ]
+            }
+        },
+        {
+            "name": "Tanner",
+            "hours": 48,
+            "availability": {
+                "Friday": [
+                    "10am-6pm"
+                ],
+                "Saturday": [
+                    "11am-7pm"
+                ]
+            }
+        },
+        {
+            "name": "Torry",
+            "hours": 16,
+            "availability": {
+                "Monday": [
+                    {
+                        "start": "10am",
+                        "end": "2pm"
+                    }
+                ],
+                "Tuesday": [
+                    {
+                        "start": "7am",
+                        "end": "11"
+                    }
+                ],
+                "Thursday": [
+                    "900-1700"
+                ]
+            }
+        }
+    ]
+}

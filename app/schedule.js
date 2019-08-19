@@ -3,7 +3,6 @@
 module.exports = function({shifts, employees}) {
     // Format the shift data
     shifts = formatShifts(shifts)
-    console.log(shifts)
     // Format the employee data
     employees = formatEmployees(employees)
     // Validate it is possible to give all employees minimum hours given total hours
@@ -28,7 +27,6 @@ function formatShifts(shifts) {
             if(typeof shift === 'string') {
                 // Format the string
                 shift = shift.trim().split('-').map(str => str.trim().replace(':', ''))
-                console.log(shift)
                 // Convert the hour strings into arrays
                 start = hourStrToNum(shift[0])
                 end = hourStrToNum(shift[1])
@@ -69,7 +67,46 @@ function formatShifts(shifts) {
 }
 // Function for formatting employees
 function formatEmployees(employees) {
-    return employees
+    const totalMinHours = [0, 0]
+    // Handle Each Employee
+    employees.forEach(({availability, hours}, i) => {
+        totalMinHours[0] += hours
+        // Loop through each shift and format it
+        Object.keys(availability).forEach((key) => {
+            // Exit if the key is not a day of the week
+            if(key.indexOf('day') === -1)
+                return
+            availability[key].forEach((shift, j) => {
+                let start, end
+                // If the shift is passed in as a string
+                if(typeof shift === 'string') {
+                    // Format the string
+                    shift = shift.trim().split('-').map(str => str.trim().replace(':', ''))
+                    // Convert the hour strings into arrays
+                    start = hourStrToNum(shift[0])
+                    end = hourStrToNum(shift[1])
+                // If the shift is passed in as an object
+                } else if (shift.start && shift.end) {
+                    start = hourStrToNum('' + shift.start)
+                    end = hourStrToNum('' + shift.end)
+                } else
+                    throw new Error('Invalid shift format')
+                // Return the shift properly formatted [hour, minute]
+                return employees[i].availability[key][j] = {
+                    start,
+                    end
+                }
+            })
+        })
+
+        // Save the total hours to the formatted shift array
+        employees[i].totalMinHours = totalMinHours
+    })
+    // Return the full formatted array
+    return {
+        totalMinHours, 
+        employees
+    }
 }
 
 function hourStrToNum(str) {

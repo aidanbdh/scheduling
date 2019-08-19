@@ -5,7 +5,7 @@ const { expect } = require('chai')
 const schedule = require('../app/schedule.js')
 const data = require('./sample_data.json')
 
-describe('schedule creation algorithm', () => {
+describe('Schedule creation algorithm', () => {
 
     before(() => {
         // This constructs different data sets by combining employee and shift data
@@ -39,7 +39,7 @@ describe('schedule creation algorithm', () => {
         expect(generatedSchedule.error).to.equal('It is not possible to fill all shifts due to not enough weekly hours.')
     })
 
-    xit('throws an error if it is not possible for all employees to get enough hours', () => {
+    it('throws an error if it is not possible for all employees to get enough hours', () => {
         const generatedSchedule = schedule(data.insufficientEmployees)
 
         expect(generatedSchedule.error).to.equal('It is not possible to give everyone enough hours due to not enough weekly hours.')

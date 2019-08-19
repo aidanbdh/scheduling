@@ -39,27 +39,23 @@
                     "6am-10am"
                 ],
                 "Tuesday": [
-                    "12am"
+                    "11am-3pm"
                 ],
                 "Wednesday": [
-                    "none"
-                ],
-                "Thursday": [
-                    "none"
-                ],
-                "Friday": [
-                    "none"
-                ],
-                "Sunday": [
-                    "none"
+                    "8-16"
                 ]
             }
         },
         {
-            "name": "",
-            "hours": 48,
+            "name": "Tanner",
+            "hours": 16,
             "availability": {
-                
+                "Friday": [
+                    "10am-6pm"
+                ],
+                "Saturday": [
+                    "11am-7pm"
+                ]
             }
         },
         {
@@ -68,23 +64,18 @@
             "availability": {
                 "Monday": [
                     {
-                        "start": "10am"
+                        "start": "10am",
+                        "end": "2pm"
                     }
                 ],
                 "Tuesday": [
-
+                    {
+                        "start": "7am",
+                        "end": "11"
+                    }
                 ],
                 "Thursday": [
-                    "none"
-                ],
-                "Friday": [
-                    "none"
-                ],
-                "Saturday": [
-                    "none"
-                ],
-                "Sunday": [
-                    "none"
+                    "900-1700"
                 ]
             }
         }
@@ -129,27 +120,23 @@
                     "6am-10am"
                 ],
                 "Tuesday": [
-                    "12am"
+                    "11am-3pm"
                 ],
                 "Wednesday": [
-                    "none"
-                ],
-                "Thursday": [
-                    "none"
-                ],
-                "Friday": [
-                    "none"
-                ],
-                "Sunday": [
-                    "none"
+                    "8-16"
                 ]
             }
         },
         {
-            "name": "",
+            "name": "Tanner",
             "hours": 48,
             "availability": {
-                
+                "Friday": [
+                    "10am-6pm"
+                ],
+                "Saturday": [
+                    "11am-7pm"
+                ]
             }
         },
         {
@@ -158,23 +145,18 @@
             "availability": {
                 "Monday": [
                     {
-                        "start": "10am"
+                        "start": "10am",
+                        "end": "2pm"
                     }
                 ],
                 "Tuesday": [
-
+                    {
+                        "start": "7am",
+                        "end": "11"
+                    }
                 ],
                 "Thursday": [
-                    "none"
-                ],
-                "Friday": [
-                    "none"
-                ],
-                "Saturday": [
-                    "none"
-                ],
-                "Sunday": [
-                    "none"
+                    "900-1700"
                 ]
             }
         }

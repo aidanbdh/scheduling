@@ -1,0 +1,30 @@
+{
+  "name": "scheduling",
+  "version": "1.0.0",
+  "description": "A website for making quick and easy schedules for employees.",
+  "main": "index.js",
+  "directories": {
+    "test": "./test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aidanbdh/scheduling.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aidanbdh/scheduling/issues"
+  },
+  "homepage": "https://github.com/aidanbdh/scheduling#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
